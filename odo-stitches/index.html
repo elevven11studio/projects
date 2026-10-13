@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>O.D.O Stitches | Fashion Designer in Keffi</title>
+	<meta name="description" content="Fashion that makes a statement with fabric. Custom designs by O.D.O Stitches in Keffi, Nasarawa State." />
+	<meta name="theme-color" content="#0c0b09" />
+	<style>
+		:root { --bg:#0c0b09; --panel:#16140f; --text:#f2ece0; --muted:#a39a88; --gold:#c9a24b; --line:#2a2619; }
+		* { box-sizing:border-box; margin:0; padding:0; }
+		html { scroll-behavior:smooth; }
+		body { font-family:Georgia,'Times New Roman',serif; background:var(--bg); color:var(--text); line-height:1.7; }
+		a { color:inherit; text-decoration:none; }
+		.wrap { max-width:1000px; margin:0 auto; padding:0 1.5rem; }
+		header.nav { position:sticky; top:0; z-index:10; background:rgba(12,11,9,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+		.nav .wrap { display:flex; justify-content:space-between; align-items:center; height:68px; }
+		.brand { font-size:1.15rem; letter-spacing:4px; text-transform:uppercase; color:var(--gold); }
+		.nav nav { display:flex; gap:1.75rem; font-size:.78rem; letter-spacing:2px; text-transform:uppercase; color:var(--muted); font-family:system-ui,sans-serif; }
+		.nav nav a:hover { color:var(--gold); }
+		.hero { text-align:center; padding:8rem 0 7rem; background:radial-gradient(ellipse at 50% 0%, rgba(201,162,75,.16), transparent 65%); }
+		.eyebrow { color:var(--gold); text-transform:uppercase; letter-spacing:5px; font-size:.75rem; font-family:system-ui,sans-serif; margin-bottom:1.5rem; }
+		h1 { font-size:clamp(2.6rem,8vw,5rem); font-weight:400; letter-spacing:2px; line-height:1.1; margin-bottom:1.25rem; }
+		.hero p { color:var(--muted); font-style:italic; font-size:1.2rem; margin-bottom:2.5rem; }
+		.btn { display:inline-block; border:1px solid var(--gold); color:var(--gold); padding:.85rem 2.2rem; letter-spacing:3px; text-transform:uppercase; font-size:.78rem; font-family:system-ui,sans-serif; transition:background .2s,color .2s; }
+		.btn:hover, .btn.solid { background:var(--gold); color:#0c0b09; }
+		.btn.solid:hover { background:#dcb85f; }
+		.rule { width:60px; height:1px; background:var(--gold); margin:0 auto 1.5rem; }
+		section { padding:5.5rem 0; }
+		h2 { font-weight:400; font-size:clamp(1.8rem,4vw,2.5rem); text-align:center; margin-bottom:.75rem; letter-spacing:1px; }
+		.sub { text-align:center; color:var(--muted); font-style:italic; max-width:32rem; margin:0 auto 3.5rem; }
+		.looks { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; }
+		.look { aspect-ratio:3/4; position:relative; display:flex; align-items:flex-end; padding:1.1rem; border:1px solid var(--line); overflow:hidden; }
+		.look::before { content:''; position:absolute; inset:0; opacity:.9; }
+		.look span { position:relative; letter-spacing:3px; text-transform:uppercase; font-size:.75rem; font-family:system-ui,sans-serif; }
+		.l1::before { background:linear-gradient(160deg,#3a2c0f,#1a1407 60%,#0c0b09); }
+		.l2::before { background:linear-gradient(160deg,#4a1d2a,#210d14 60%,#0c0b09); }
+		.l3::before { background:linear-gradient(160deg,#1c2f2a,#0e1714 60%,#0c0b09); }
+		.l4::before { background:linear-gradient(160deg,#35301f,#18150c 60%,#0c0b09); }
+		.alt { background:var(--panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+		.about { max-width:640px; margin:0 auto; text-align:center; font-size:1.15rem; color:#d8d0bf; }
+		.steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:2rem; text-align:center; }
+		.steps b { display:block; color:var(--gold); font-size:2rem; font-weight:400; margin-bottom:.4rem; }
+		.steps h3 { font-weight:400; letter-spacing:2px; text-transform:uppercase; font-size:.85rem; font-family:system-ui,sans-serif; margin-bottom:.4rem; }
+		.steps p { color:var(--muted); font-size:.95rem; }
+		.contact { text-align:center; }
+		.contact .actions { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:2rem; }
+		.meta { margin-top:2rem; color:var(--muted); font-family:system-ui,sans-serif; font-size:.9rem; }
+		footer { border-top:1px solid var(--line); text-align:center; padding:1.5rem; font-size:.8rem; color:#6f6757; font-family:system-ui,sans-serif; }
+		footer a { text-decoration:underline; }
+		@media (max-width:700px) { .nav nav { display:none; } .hero { padding:5rem 0 4.5rem; } section { padding:4rem 0; } }
+	</style>
+</head>
+<body>
+	<header class="nav">
+		<div class="wrap">
+			<a class="brand" href="#top">O.D.O Stitches</a>
+			<nav><a href="#collection">Collection</a><a href="#about">About</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+		</div>
+	</header>
+
+	<div id="top" class="hero">
+		<div class="wrap">
+			<div class="eyebrow">Keffi, Nasarawa State</div>
+			<h1>Statements<br />in fabric</h1>
+			<div class="rule"></div>
+			<p>Elegant, made-to-measure fashion by Ogabiela Daniel Ochoche.</p>
+			<a class="btn" href="#collection">View the collection</a>
+		</div>
+	</div>
+
+	<section id="collection">
+		<div class="wrap">
+			<h2>The Collection</h2>
+			<p class="sub">Pieces cut and finished by hand.</p>
+			<div class="looks">
+				<div class="look l1"><span>Evening</span></div>
+				<div class="look l2"><span>Occasion</span></div>
+				<div class="look l3"><span>Everyday</span></div>
+				<div class="look l4"><span>Custom</span></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="alt">
+		<div class="wrap">
+			<h2>The Designer</h2>
+			<div class="rule"></div>
+			<p class="about">I'm a fashion designer. I make statements with fabric.</p>
+		</div>
+	</section>
+
+	<section id="process">
+		<div class="wrap">
+			<h2>How it works</h2>
+			<p class="sub">From idea to fitting in three steps.</p>
+			<div class="steps">
+				<div><b>I</b><h3>Consult</h3><p>Share your idea, occasion and fabric taste.</p></div>
+				<div><b>II</b><h3>Measure</h3><p>We take your measurements and agree a design.</p></div>
+				<div><b>III</b><h3>Fit</h3><p>Final fitting, then your piece is ready.</p></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="alt contact">
+		<div class="wrap">
+			<h2>Order a piece</h2>
+			<div class="rule"></div>
+			<div class="actions">
+				<a class="btn solid" href="https://wa.me/2348108393697">WhatsApp</a>
+				<a class="btn" href="tel:+2348108393697">0810 839 3697</a>
+			</div>
+			<p class="meta">Keffi, Nasarawa State</p>
+		</div>
+	</section>
+
+	<footer>&copy; <span id="y"></span> O.D.O Stitches. Website by <a href="https://elevven11studio.github.io/">Elevven11 Studio</a>.</footer>
+	<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
