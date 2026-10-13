@@ -3,111 +3,206 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>O.D.O Stitches | Fashion Designer in Keffi</title>
-	<meta name="description" content="Fashion that makes a statement with fabric. Custom designs by O.D.O Stitches in Keffi, Nasarawa State." />
+	<title>O.D.O Stitches | Native Wear, Ankara and Aso Ebi in Keffi</title>
+	<meta name="description" content="Made-to-measure senator, agbada, kaftan, Ankara and Aso Ebi by O.D.O Stitches in Keffi, Nasarawa State. Order on WhatsApp." />
 	<meta name="theme-color" content="#0c0b09" />
 	<style>
-		:root { --bg:#0c0b09; --panel:#16140f; --text:#f2ece0; --muted:#a39a88; --gold:#c9a24b; --line:#2a2619; }
+		:root { --bg:#0c0b09; --panel:#16140f; --text:#f2ece0; --muted:#a39a88; --gold:#c9a24b; --green:#1f6b45; --line:#2a2619; }
 		* { box-sizing:border-box; margin:0; padding:0; }
 		html { scroll-behavior:smooth; }
 		body { font-family:Georgia,'Times New Roman',serif; background:var(--bg); color:var(--text); line-height:1.7; }
 		a { color:inherit; text-decoration:none; }
-		.wrap { max-width:1000px; margin:0 auto; padding:0 1.5rem; }
-		header.nav { position:sticky; top:0; z-index:10; background:rgba(12,11,9,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
-		.nav .wrap { display:flex; justify-content:space-between; align-items:center; height:68px; }
-		.brand { font-size:1.15rem; letter-spacing:4px; text-transform:uppercase; color:var(--gold); }
-		.nav nav { display:flex; gap:1.75rem; font-size:.78rem; letter-spacing:2px; text-transform:uppercase; color:var(--muted); font-family:system-ui,sans-serif; }
+		.wrap { max-width:1040px; margin:0 auto; padding:0 1.5rem; }
+		.sans { font-family:system-ui,'Segoe UI',sans-serif; }
+
+		.pattern { height:10px; background:repeating-linear-gradient(90deg,var(--gold) 0 14px,var(--green) 14px 28px,#7a1f2e 28px 42px,var(--bg) 42px 48px); }
+
+		header.nav { position:sticky; top:0; z-index:10; background:rgba(12,11,9,.93); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+		.nav .wrap { display:flex; justify-content:space-between; align-items:center; height:66px; }
+		.brand { font-size:1.1rem; letter-spacing:4px; text-transform:uppercase; color:var(--gold); }
+		.nav nav { display:flex; gap:1.6rem; font-size:.75rem; letter-spacing:2px; text-transform:uppercase; color:var(--muted); font-family:system-ui,sans-serif; }
 		.nav nav a:hover { color:var(--gold); }
-		.hero { text-align:center; padding:8rem 0 7rem; background:radial-gradient(ellipse at 50% 0%, rgba(201,162,75,.16), transparent 65%); }
-		.eyebrow { color:var(--gold); text-transform:uppercase; letter-spacing:5px; font-size:.75rem; font-family:system-ui,sans-serif; margin-bottom:1.5rem; }
-		h1 { font-size:clamp(2.6rem,8vw,5rem); font-weight:400; letter-spacing:2px; line-height:1.1; margin-bottom:1.25rem; }
-		.hero p { color:var(--muted); font-style:italic; font-size:1.2rem; margin-bottom:2.5rem; }
-		.btn { display:inline-block; border:1px solid var(--gold); color:var(--gold); padding:.85rem 2.2rem; letter-spacing:3px; text-transform:uppercase; font-size:.78rem; font-family:system-ui,sans-serif; transition:background .2s,color .2s; }
+
+		.btn { display:inline-block; border:1px solid var(--gold); color:var(--gold); padding:.85rem 2rem; letter-spacing:3px; text-transform:uppercase; font-size:.76rem; font-family:system-ui,sans-serif; transition:background .2s,color .2s; }
 		.btn:hover, .btn.solid { background:var(--gold); color:#0c0b09; }
 		.btn.solid:hover { background:#dcb85f; }
+		.btn.sm { padding:.5rem 1.1rem; letter-spacing:2px; }
+
+		.hero { text-align:center; padding:7rem 0 6rem; background:radial-gradient(ellipse at 50% 0%, rgba(201,162,75,.18), transparent 65%); }
+		.eyebrow { color:var(--gold); text-transform:uppercase; letter-spacing:5px; font-size:.72rem; font-family:system-ui,sans-serif; margin-bottom:1.25rem; }
+		h1 { font-size:clamp(2.5rem,8vw,4.8rem); font-weight:400; letter-spacing:2px; line-height:1.1; margin-bottom:1.25rem; }
+		.hero p { color:var(--muted); font-style:italic; font-size:1.15rem; max-width:34rem; margin:0 auto 2.25rem; }
+		.actions { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
 		.rule { width:60px; height:1px; background:var(--gold); margin:0 auto 1.5rem; }
-		section { padding:5.5rem 0; }
-		h2 { font-weight:400; font-size:clamp(1.8rem,4vw,2.5rem); text-align:center; margin-bottom:.75rem; letter-spacing:1px; }
-		.sub { text-align:center; color:var(--muted); font-style:italic; max-width:32rem; margin:0 auto 3.5rem; }
-		.looks { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; }
-		.look { aspect-ratio:3/4; position:relative; display:flex; align-items:flex-end; padding:1.1rem; border:1px solid var(--line); overflow:hidden; }
-		.look::before { content:''; position:absolute; inset:0; opacity:.9; }
-		.look span { position:relative; letter-spacing:3px; text-transform:uppercase; font-size:.75rem; font-family:system-ui,sans-serif; }
-		.l1::before { background:linear-gradient(160deg,#3a2c0f,#1a1407 60%,#0c0b09); }
-		.l2::before { background:linear-gradient(160deg,#4a1d2a,#210d14 60%,#0c0b09); }
-		.l3::before { background:linear-gradient(160deg,#1c2f2a,#0e1714 60%,#0c0b09); }
-		.l4::before { background:linear-gradient(160deg,#35301f,#18150c 60%,#0c0b09); }
+
+		section { padding:5rem 0; }
+		h2 { font-weight:400; font-size:clamp(1.7rem,4vw,2.4rem); text-align:center; margin-bottom:.6rem; letter-spacing:1px; }
+		.sub { text-align:center; color:var(--muted); font-style:italic; max-width:34rem; margin:0 auto 3rem; }
 		.alt { background:var(--panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-		.about { max-width:640px; margin:0 auto; text-align:center; font-size:1.15rem; color:#d8d0bf; }
-		.steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:2rem; text-align:center; }
-		.steps b { display:block; color:var(--gold); font-size:2rem; font-weight:400; margin-bottom:.4rem; }
-		.steps h3 { font-weight:400; letter-spacing:2px; text-transform:uppercase; font-size:.85rem; font-family:system-ui,sans-serif; margin-bottom:.4rem; }
-		.steps p { color:var(--muted); font-size:.95rem; }
+
+		.looks { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.1rem; }
+		.look { border:1px solid var(--line); background:var(--panel); }
+		.shot { position:relative; aspect-ratio:3/4; overflow:hidden; display:grid; place-items:center; }
+		.shot svg { width:48px; height:48px; stroke:rgba(255,255,255,.35); fill:none; stroke-width:1.3; stroke-linecap:round; stroke-linejoin:round; }
+		.shot img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+		.c1 { background:linear-gradient(160deg,#3a2c0f,#1a1407 70%); }
+		.c2 { background:linear-gradient(160deg,#17402b,#0b1a12 70%); }
+		.c3 { background:linear-gradient(160deg,#4a1d2a,#210d14 70%); }
+		.c4 { background:linear-gradient(160deg,#4a3410,#1f1608 70%); }
+		.c5 { background:linear-gradient(160deg,#2b2440,#130f1d 70%); }
+		.c6 { background:linear-gradient(160deg,#35301f,#18150c 70%); }
+		.look .info { padding:1.1rem 1.2rem 1.3rem; }
+		.look h3 { font-weight:400; font-size:1.1rem; letter-spacing:1px; margin-bottom:.2rem; }
+		.look p { color:var(--muted); font-size:.92rem; }
+
+		.who { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:2rem; text-align:center; }
+		.who h3 { color:var(--gold); font-weight:400; letter-spacing:3px; text-transform:uppercase; font-size:.85rem; font-family:system-ui,sans-serif; margin-bottom:.5rem; }
+		.who p { color:#d8d0bf; font-size:.98rem; }
+
+		.asoebi { display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; }
+		.asoebi h2 { text-align:left; }
+		.asoebi p { color:#d8d0bf; margin-bottom:1.25rem; }
+		.asoebi ul { list-style:none; display:grid; gap:.6rem; margin-bottom:1.75rem; }
+		.asoebi li::before { content:'\2726'; color:var(--gold); margin-right:.7rem; }
+		.asoebi .shot { aspect-ratio:4/5; border:1px solid var(--line); }
+
+		.steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:2rem; text-align:center; }
+		.steps b { display:block; color:var(--gold); font-size:2rem; font-weight:400; }
+		.steps h3 { font-weight:400; letter-spacing:2px; text-transform:uppercase; font-size:.82rem; font-family:system-ui,sans-serif; margin:.2rem 0 .4rem; }
+		.steps p { color:var(--muted); font-size:.93rem; }
+
+		.about { max-width:620px; margin:0 auto; text-align:center; font-size:1.15rem; color:#d8d0bf; }
+
 		.contact { text-align:center; }
-		.contact .actions { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:2rem; }
 		.meta { margin-top:2rem; color:var(--muted); font-family:system-ui,sans-serif; font-size:.9rem; }
 		footer { border-top:1px solid var(--line); text-align:center; padding:1.5rem; font-size:.8rem; color:#6f6757; font-family:system-ui,sans-serif; }
 		footer a { text-decoration:underline; }
-		@media (max-width:700px) { .nav nav { display:none; } .hero { padding:5rem 0 4.5rem; } section { padding:4rem 0; } }
+		.wa-float { position:fixed; right:1rem; bottom:1rem; z-index:20; background:#25d366; color:#06210f; font-family:system-ui,sans-serif; font-weight:700; font-size:.85rem; padding:.7rem 1.1rem; border-radius:999px; box-shadow:0 6px 20px rgba(0,0,0,.5); }
+
+		@media (max-width:760px) {
+			.nav nav { display:none; }
+			.hero { padding:4.5rem 0 4rem; }
+			section { padding:3.5rem 0; }
+			.asoebi { grid-template-columns:1fr; gap:2rem; }
+			.asoebi h2 { text-align:center; }
+			.asoebi .actions { justify-content:center; }
+		}
 	</style>
 </head>
 <body>
+	<div class="pattern"></div>
 	<header class="nav">
 		<div class="wrap">
 			<a class="brand" href="#top">O.D.O Stitches</a>
-			<nav><a href="#collection">Collection</a><a href="#about">About</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+			<nav><a href="#collection">Collection</a><a href="#occasions">Occasions</a><a href="#asoebi">Aso Ebi</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+			<a class="btn sm" href="https://wa.me/2348108393697?text=Hello%20O.D.O%20Stitches%2C%20I%27d%20like%20to%20place%20an%20order.">Order</a>
 		</div>
 	</header>
 
 	<div id="top" class="hero">
 		<div class="wrap">
 			<div class="eyebrow">Keffi, Nasarawa State</div>
-			<h1>Statements<br />in fabric</h1>
+			<h1>Native wear<br />made to measure</h1>
 			<div class="rule"></div>
-			<p>Elegant, made-to-measure fashion by Ogabiela Daniel Ochoche.</p>
-			<a class="btn" href="#collection">View the collection</a>
+			<p>Senator, agbada, kaftan, Ankara and Aso Ebi, cut and sewn to fit you perfectly.</p>
+			<div class="actions">
+				<a class="btn solid" href="https://wa.me/2348108393697?text=Hello%20O.D.O%20Stitches%2C%20I%27d%20like%20to%20place%20an%20order.">Order on WhatsApp</a>
+				<a class="btn" href="#collection">View styles</a>
+			</div>
 		</div>
 	</div>
 
 	<section id="collection">
 		<div class="wrap">
-			<h2>The Collection</h2>
-			<p class="sub">Pieces cut and finished by hand.</p>
+			<h2>What we sew</h2>
+			<p class="sub">Elegant native and contemporary styles for men and women.</p>
 			<div class="looks">
-				<div class="look l1"><span>Evening</span></div>
-				<div class="look l2"><span>Occasion</span></div>
-				<div class="look l3"><span>Everyday</span></div>
-				<div class="look l4"><span>Custom</span></div>
+				<div class="look">
+					<div class="shot c1"><svg viewBox="0 0 24 24"><path d="M8 3l4 3 4-3 4 4-3 3v11H7V10L4 7z"/></svg><img src="images/senator.jpg" alt="Senator wear" loading="lazy" onerror="this.remove()" /></div>
+					<div class="info"><h3>Senator and Kaftan</h3><p>Clean, sharp native for work and events.</p></div>
+				</div>
+				<div class="look">
+					<div class="shot c2"><svg viewBox="0 0 24 24"><path d="M8 3l4 3 4-3 4 4-3 3v11H7V10L4 7z"/></svg><img src="images/agbada.jpg" alt="Agbada" loading="lazy" onerror="this.remove()" /></div>
+					<div class="info"><h3>Agbada</h3><p>Full flowing sets for weddings and ceremonies.</p></div>
+				</div>
+				<div class="look">
+					<div class="shot c3"><svg viewBox="0 0 24 24"><path d="M9 3h6l1 6-2 3 3 9H7l3-9-2-3z"/></svg><img src="images/ankara.jpg" alt="Ankara outfit" loading="lazy" onerror="this.remove()" /></div>
+					<div class="info"><h3>Ankara</h3><p>Bold prints in gowns, skirts and sets.</p></div>
+				</div>
+				<div class="look">
+					<div class="shot c4"><svg viewBox="0 0 24 24"><path d="M9 3h6l1 6-2 3 3 9H7l3-9-2-3z"/></svg><img src="images/lace.jpg" alt="Lace and Aso Oke" loading="lazy" onerror="this.remove()" /></div>
+					<div class="info"><h3>Lace and Aso Oke</h3><p>Traditional wedding and engagement attire.</p></div>
+				</div>
+				<div class="look">
+					<div class="shot c5"><svg viewBox="0 0 24 24"><path d="M9 3h6l1 6-2 3 3 9H7l3-9-2-3z"/></svg><img src="images/corporate.jpg" alt="Corporate native" loading="lazy" onerror="this.remove()" /></div>
+					<div class="info"><h3>Corporate native</h3><p>Office-ready looks with a native touch.</p></div>
+				</div>
+				<div class="look">
+					<div class="shot c6"><svg viewBox="0 0 24 24"><path d="M9 3h6l1 6-2 3 3 9H7l3-9-2-3z"/></svg><img src="images/custom.jpg" alt="Custom design" loading="lazy" onerror="this.remove()" /></div>
+					<div class="info"><h3>Custom designs</h3><p>Bring a picture or an idea and we make it.</p></div>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="about" class="alt">
+	<section id="occasions" class="alt">
 		<div class="wrap">
-			<h2>The Designer</h2>
-			<div class="rule"></div>
-			<p class="about">I'm a fashion designer. I make statements with fabric.</p>
+			<h2>For every occasion</h2>
+			<p class="sub">Whatever the event, you arrive dressed to be remembered.</p>
+			<div class="who">
+				<div><h3>Weddings</h3><p>Traditional and white wedding outfits for the couple and family.</p></div>
+				<div><h3>Church and festive</h3><p>Sunday best, Christmas, Sallah and naming ceremonies.</p></div>
+				<div><h3>Owambe and parties</h3><p>Statement pieces that stand out on the dance floor.</p></div>
+				<div><h3>Work and daily</h3><p>Smart native for the office and everyday wear.</p></div>
+			</div>
 		</div>
 	</section>
 
-	<section id="process">
+	<section id="asoebi">
+		<div class="wrap asoebi">
+			<div>
+				<h2>Aso Ebi, handled</h2>
+				<p>Planning a wedding or family event? We sew matching outfits for your whole group, all delivered on time.</p>
+				<ul>
+					<li>Same fabric, styles tailored per person</li>
+					<li>Bulk orders for friends and family</li>
+					<li>Delivery dates agreed before we start</li>
+				</ul>
+				<div class="actions" style="justify-content:flex-start">
+					<a class="btn solid" href="https://wa.me/2348108393697?text=Hello%20O.D.O%20Stitches%2C%20I%20need%20Aso%20Ebi%20for%20an%20event.">Ask about Aso Ebi</a>
+				</div>
+			</div>
+			<div class="shot c3"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 17l-5-5-9 7"/></svg><img src="images/asoebi.jpg" alt="Aso Ebi group" loading="lazy" onerror="this.remove()" /></div>
+		</div>
+	</section>
+
+	<section id="process" class="alt">
 		<div class="wrap">
 			<h2>How it works</h2>
-			<p class="sub">From idea to fitting in three steps.</p>
+			<p class="sub">From idea to fitting in four steps.</p>
 			<div class="steps">
-				<div><b>I</b><h3>Consult</h3><p>Share your idea, occasion and fabric taste.</p></div>
-				<div><b>II</b><h3>Measure</h3><p>We take your measurements and agree a design.</p></div>
-				<div><b>III</b><h3>Fit</h3><p>Final fitting, then your piece is ready.</p></div>
+				<div><b>I</b><h3>Message</h3><p>Send your style, fabric and event date on WhatsApp.</p></div>
+				<div><b>II</b><h3>Measure</h3><p>We take your measurements, in person or by guide.</p></div>
+				<div><b>III</b><h3>Sew</h3><p>Your outfit is cut and finished by hand.</p></div>
+				<div><b>IV</b><h3>Fit</h3><p>Final fitting and adjustments before pickup.</p></div>
 			</div>
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="wrap">
+			<h2>The designer</h2>
+			<div class="rule"></div>
+			<p class="about">I'm Ogabiela Daniel Ochoche. I make statements with fabric, and I want every client to leave feeling seen.</p>
 		</div>
 	</section>
 
 	<section id="contact" class="alt contact">
 		<div class="wrap">
-			<h2>Order a piece</h2>
+			<h2>Order your outfit</h2>
 			<div class="rule"></div>
 			<div class="actions">
-				<a class="btn solid" href="https://wa.me/2348108393697">WhatsApp</a>
+				<a class="btn solid" href="https://wa.me/2348108393697?text=Hello%20O.D.O%20Stitches%2C%20I%27d%20like%20to%20place%20an%20order.">WhatsApp</a>
 				<a class="btn" href="tel:+2348108393697">0810 839 3697</a>
 			</div>
 			<p class="meta">Keffi, Nasarawa State</p>
@@ -115,6 +210,7 @@
 	</section>
 
 	<footer>&copy; <span id="y"></span> O.D.O Stitches. Website by <a href="https://elevven11studio.github.io/">Elevven11 Studio</a>.</footer>
+	<a class="wa-float" href="https://wa.me/2348108393697?text=Hello%20O.D.O%20Stitches%2C%20I%27d%20like%20to%20place%20an%20order.">WhatsApp</a>
 	<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
